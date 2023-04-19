@@ -1,17 +1,27 @@
-﻿Console.WriteLine("Pen price: ");
+﻿using System;
 
-double penPrice = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Notebook price: ");
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Pen price: ");
 
-double notebookPrice = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Pens count: ");
+        double penPrice = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Notebook price: ");
 
-int penCount = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Notebooks count: ");
+        double notebookPrice = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Pens count: ");
 
-int notebookCount = Convert.ToInt32(Console.ReadLine());
+        int penCount = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Notebooks count: ");
+
+        int notebookCount = Convert.ToInt32(Console.ReadLine());
 
 
-double sum =(penCount*penPrice)+ (notebookCount*notebookPrice);
+        double sum = (penCount * penPrice) + (notebookCount * notebookPrice);
 
-Console.WriteLine("All price: " + sum);
+        Console.WriteLine("All price: " + sum);
+
+
+    }
+}
